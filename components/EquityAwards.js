@@ -7,28 +7,13 @@ function EquityAwards() {
   const [mockData, setMockData] = useState(api.MOCK_API_RESPONSE);
   const [current, setCurrent] = useState({ active: mockData[0].label });
 
-  const onDelete = content => {
-    setCurrent({ active: content });
-  };
-  const messageInfo = {
-    color: 'black',
-    cursor: 'pointer'
-  };
-  const tab = {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    fontFamily: 'Arial, Helvetica, sans-serif',
-    border: ' 1px solid #ddd',
-    paddingBottom: '12px'
-  };
   return (
     <div className="container">
-      <div style={tab}>
+      <div className="tab">
         {mockData.map((data, index) => {
           return (
             <h2
-              style={messageInfo}
+              className="tabContent"
               onClick={() => setCurrent({ active: data.label })}
             >
               {data.label}

@@ -1,3 +1,3 @@
-# react-dlbdrf
+React App with a table
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-dlbdrf)
+To run use `npm start`
