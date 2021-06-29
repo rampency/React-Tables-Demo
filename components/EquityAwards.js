@@ -27,7 +27,10 @@ function EquityAwards() {
       <div style={tab}>
         {mockData.map((data, index) => {
           return (
-            <h2 style={messageInfo} onClick={() => onDelete(data.label)}>
+            <h2
+              style={messageInfo}
+              onClick={() => setCurrent({ active: data.label })}
+            >
               {data.label}
             </h2>
           );
@@ -39,7 +42,6 @@ function EquityAwards() {
             className={data.label}
             key={index}
             data={data}
-            onDelete={onDelete}
             current={current}
           />
         );

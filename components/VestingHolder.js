@@ -1,6 +1,6 @@
 import React from 'react';
 import Vesting from './Vesting';
-const VestingHolder = ({ data, onDelete, current }) => {
+const VestingHolder = ({ data, current }) => {
   const tableStyle = {
     display: current.active == data.label ? '' : 'none'
   };

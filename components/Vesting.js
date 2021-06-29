@@ -17,7 +17,7 @@ const Vesting = ({ data }) => {
       <p>{data.issue_date}</p>
       <p>{data.vesting_manager_name}</p>
 
-      <table className="customers">
+      <table className="vesting">
         <thead>
           <tr>
             <th>Vesting date</th>
